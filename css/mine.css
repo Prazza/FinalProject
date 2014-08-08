@@ -1,0 +1,13 @@
+.taco {
+	width: 75%;
+}
+
+.boxme {
+	border-style: solid;
+	border-color: red;
+}
+
+.toc-window {
+	position: relative;
+
+}

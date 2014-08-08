@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- {% include head.html %} -->
+  <head>
+  	<link rel="stylesheet" href="css/foundation.css">
+  	<link rel="stylesheet" href="css/foundation.min.css">
+
+  	<style>
+            /* Prevents slides from flashing */
+            #slides {
+              display:none;
+            }
+    </style>
+
+  </head>
+    
+  <body>
+    <header>
+    	<!-- {% include header.html %} -->
+    	<img src="img/torchys.jpg">
+    	<div id="slides">
+
+    	</div>
+
+    </header>
+    
+
+    <div class="page-content">
+      <div class="wrap">
+      {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    </body>
+    
+</html>
