@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<!-- CSS -->
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/mine.css">
+<!-- Content -->
+<div class="home">
+
+
+  <h1>
+
+
+    <!-- What loads in  {{content}} -->
+    Taco Quest
+
+
+  </h1>
+
+
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <span class="post">
+        <!-- <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <p> {{Rating}} </p>  
+      <!-- <p>{{ post.excerpt | truncatewords:5}}</p> -->
+      </span>
+    {% endfor %}
+
+  </ul>
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+</div>

@@ -1,0 +1,75 @@
+
+/*design helpers. comment out when not designing*/
+/*.boxme {
+	border-style: solid;
+	border-color: red;
+}*/
+
+/*
+Color Template 
+
+Brown: 5E412F;
+
+Tea: FCEBB6;
+
+Turqoise: 78C0A8;
+
+Orange: F07818;
+
+Burnt-Gold: F0A830;
+
+
+*/
+
+
+/* The Bones */
+body{
+	background-color: #F0EAD6;
+}
+
+h1, h2, h3 {
+	color: #5E412F;
+}
+
+/* Fine Tune */
+.tippytop h1 {
+	font-size: 10px;
+	text-align: right;
+	color: #78C0A8;
+
+}
+
+.content {
+	text-align: center;
+}
+
+/*TOC*/
+.toc h2 {
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+	color: #78C0A8;
+
+}
+
+.tocbutton {
+	background-color: #5E412F;
+}
+
+a {
+	color: #F0A830;
+}
+
+a:hover {
+	color: #F07818;
+
+}
+
+/**/
+.taco {
+	width: 75%;
+}
+
+.slideshow {
+	text-align: center;
+}
