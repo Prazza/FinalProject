@@ -1,9 +1,8 @@
-
 /*design helpers. comment out when not designing*/
-.boxme {
+/*.boxme {
 	border-style: solid;
 	border-color: red;
-}
+}*/
 
 /*
 Color Template 
@@ -23,8 +22,11 @@ Burnt-Gold: F0A830;
 
 
 /* The Bones */
+html {
+	font-family: "Open Sans", "sans-serif";
+}
 body{
-	background-color: #FCEBB6;
+	background-color: #F0EAD6;
 }
 
 h1, h2, h3 {
@@ -40,17 +42,36 @@ h1, h2, h3 {
 }
 
 .content {
-	text-align: left;
+	text-align: center;
 }
 
-.toc {
+/*TOC*/
+.toc h2 {
 	position: relative;
+	font-size: 12px;
+	text-align: center;
+	color: #78C0A8;
 
 }
 
+.tocbutton {
+	background-color: #5E412F;
+}
+
+a {
+	color: #F0A830;
+}
+
+a:hover {
+	color: #F07818;
+
+}
+
+/**/
 .taco {
 	width: 75%;
 }
 
 .slideshow {
+	text-align: center;
 }
