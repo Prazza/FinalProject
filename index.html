@@ -32,6 +32,15 @@ layout: default
       </span>
     {% endfor %}
 
+    {% for post in site.posts %}
+      <span class="post">
+        <!-- <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.image }}</a>
+      <p> {{Rating}} </p>  
+      <!-- <p>{{ post.excerpt | truncatewords:5}}</p> -->
+      </span>
+    {% endfor %}
+
   </ul>
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

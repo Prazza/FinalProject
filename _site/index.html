@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/foundation.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/mine.css">
+        <link rel="stylesheet" href="css/slides.css">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     
@@ -37,9 +38,12 @@
 
             <div class="small-12 column slideshow boxme">
                 <h2> This is my foodblog </h2>
-                <!-- <div class="slides">
-                    <img class="taco" src="img/torchys.jpg">
-                </div> -->
+                <div id="slides">
+                    <img src="img/cabobobs.jpg" alt="">
+                    <img src="img/tacodeli.jpg" alt="">
+                    <img src="img/Torchysqueso.jpg" alt="">
+                    
+                </div>
             </div>
 
             <div class="small-12 column toc boxme">
@@ -109,6 +113,36 @@
       </span>
     
 
+    
+      <span class="post">
+        <!-- <span class="post-date">Aug 12, 2014</span> -->
+        <a class="post-link" href="/food/2014/08/12/post1.html"></a>
+      <p>  </p>  
+      <!-- <p><div section="foodpost"> <h2> Torchy's Taco...</p> -->
+      </span>
+    
+      <span class="post">
+        <!-- <span class="post-date">Aug 11, 2014</span> -->
+        <a class="post-link" href="/food/2014/08/11/maudies.html"></a>
+      <p>  </p>  
+      <!-- <p><div section="foodpost"> <h2> Taco Deli...</p> -->
+      </span>
+    
+      <span class="post">
+        <!-- <span class="post-date">Aug 11, 2014</span> -->
+        <a class="post-link" href="/food/2014/08/11/chipotle.html"></a>
+      <p>  </p>  
+      <!-- <p><div section="foodpost"> <h2> Chipotle</h2> <h3...</p> -->
+      </span>
+    
+      <span class="post">
+        <!-- <span class="post-date">Aug 11, 2014</span> -->
+        <a class="post-link" href="/food/2014/08/11/cabobob.html">img/cabobobs.jpg</a>
+      <p>  </p>  
+      <!-- <p><!-- CSS --> <link rel="stylesheet"...</p> -->
+      </span>
+    
+
   </ul>
 
   <!-- <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p> -->
@@ -126,20 +160,30 @@
 
 
 
+         <!-- JavaScripts -->
 
-        <!-- Scripts below here -->
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Foundation JS -->
+        <script src="/js/foundation.min.js"></script>
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            $(document).foundation();
         </script>
+
+        <!-- Slides.js -->
+        <!-- TODO link to the slides.min.js file -->
+        <script src="js/jquery.slides.js"></script>
+
+        <!-- TODO write the .slidesjs() code to make the slideshow work -->
+         <script>
+        $(function(){
+        $("#slides").slidesjs({
+          
+            });
+        });
+        </script>
+
+
     </body>
 </html>
